@@ -1,0 +1,3 @@
+$preguntas=array('Asistencia y puntualidad del docente a clases y examenes','Puntualidad del docente a clases','Asistencia del docente a examenes','Puntualidad del docente a examenes','Disposicion del docente para atender consultas','Claridad del docente para desarrollar conceptos','Claridad del docente para desarrollar practicas', 'Medida en que el docente incentiva la participacion de los alumnos','Trato respetuoso del docente con los alumnos','Usted considera que el docente es');
+
+/*$preguntas=array('El docente domina los temas que expone','Usted asistio a la calses del docente que esta calificando con regularidad');*/ 
