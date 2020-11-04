@@ -211,24 +211,24 @@ require APPPATH . 'libraries/Format.php';
         // genera encform y la relacion con las encgral de asignatura y docentes, ademas gener encresp
         public function generaEncuesta_post(){
 
-            // $params = json_decode(file_get_contents('php://input'), TRUE);           DESCOMENTAR ESTA LINEA
+            $params = json_decode(file_get_contents('php://input'), TRUE);
             // echo "<pre>".print_r($params,false)."</pre>";die();
             
 
-            // $id_sede        = (int)$params['idSede'];
-            // $id_ua          = (int)$params['idUa'];
-            // $id_oe          = (int)$params['idOe'];
-            // $curso          = (int)$params['curso'];
-            // $id_asignatura  = (int)$params['idAsignatura'];          DESCOMENTAR TODAS ESTAS LINEAS DE PARAMETROS
+            $id_sede        = (int)$params['idSede'];
+            $id_ua          = (int)$params['idUa'];
+            $id_oe          = (int)$params['idOe'];
+            $curso          = (int)$params['curso'];
+            $id_asignatura  = (int)$params['idAsignatura'];
             
             $id_periodo     = 2;
             // $id_tipo_enc    = 1;           ESTA LINEA NO SE UTILIZA, OPTIMIZAR A FUTURO
 
-            $id_sede        = 1;
-            $id_asignatura  = 5248;
-            $id_oe          = 18;
-            $id_ua          = 3;
-            $curso          = 3;                                        // COMENTAR TODOS ESTOS VALORES HARDCOEADOS
+            // $id_sede        = 1;
+            // $id_asignatura  = 5248;
+            // $id_oe          = 18;
+            // $id_ua          = 3;
+            // $curso          = 3;                                        // COMENTAR TODOS ESTOS VALORES HARDCOEADOS
             
             
             $this->load->model('enc_gral_model', 'eg_model');
